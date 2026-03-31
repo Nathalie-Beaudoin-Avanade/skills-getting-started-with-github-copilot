@@ -76,71 +76,54 @@ section h3 {
 
 .participants-section {
   margin-top: 12px;
-  padding: 12px;
-  background: linear-gradient(180deg, #ffffff 0%, #eef3ff 100%);
-  border: 1px solid #dbe5ff;
-  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #e3e7ff;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #f7f9ff 0%, #ffffff 100%);
 }
 
 .participants-title {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   color: #1a237e;
 }
 
 .participants-list {
   list-style: none;
-  margin-left: 0;
-  display: grid;
-  gap: 8px;
+  margin: 0;
+  padding: 0;
 }
 
 .participant-item {
-  color: #1f2d5a;
-  word-break: break-word;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #dbe5ff;
+  padding: 6px 0;
+  border-top: 1px solid #eceffc;
 }
 
-.participant-email {
-  flex: 1;
+.participant-item:first-child {
+  border-top: none;
 }
 
-.remove-participant-button {
-  width: 30px;
-  height: 30px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid #f0b8c1;
-  background: #fff2f4;
-  color: #b3261e;
+.no-participants {
+  color: #6a6a6a;
+  font-style: italic;
+}
+
+.delete-participant-btn {
+  border: 1px solid #f3b5b5;
+  background-color: #fff5f5;
+  color: #b71c1c;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
   font-size: 14px;
   line-height: 1;
-  cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.remove-participant-button:hover {
-  background-color: #ffe6eb;
-  box-shadow: 0 2px 6px rgba(179, 38, 30, 0.2);
-  transform: translateY(-1px);
-}
-
-.remove-participant-button:focus-visible {
-  outline: 2px solid #b3261e;
-  outline-offset: 2px;
-}
-
-.participant-item.empty {
-  color: #5f6368;
-  font-style: italic;
+.delete-participant-btn:hover {
+  background-color: #ffeaea;
 }
 
 .form-group {
