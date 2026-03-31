@@ -83,8 +83,16 @@ document.addEventListener("DOMContentLoaded", () => {
   signupForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const email = document.getElementById("email").value;
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value.trim().toLowerCase();
     const activity = document.getElementById("activity").value;
+
+    if (!email) {
+      showMessage("Please enter a valid email.", "error");
+      return;
+    }
+
+    emailInput.value = email;
 
     try {
       const response = await fetch(
